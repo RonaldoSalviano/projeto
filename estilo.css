@@ -1,0 +1,30 @@
+body {
+    background-image: url('areadetrabalho/foto-vertical-de-um-lindo-ceu-estrelado (1).jpg');
+    background-size: cover;
+}
+
+h2 id="login" {
+    text-align: center;
+}
+
+.elemento{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.element{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    
+    
+}
+
+
+
+
+
+
+
