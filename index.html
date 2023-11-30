@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script type="application/json" id="CloudTranslationConfig">
+        {
+      "Settings": {
+        "DefaultLanguage": "en",
+        "UrlLanguageLocation": "", // Keep empty
+        "TranslatorProvider": "Azure", // Could be empty if you want to provide the translations manually
+        "TranslatorProviderKey": "{Your Microsoft Azure Translator Key}",
+        "UrlLanguageLocation": "Subdirectory"
+      },
+      "Languages": [
+        {
+          "Code": "en",
+          "DisplayName": "English"
+        },
+        {
+          "Code": "de",
+          "DisplayName": "Deutsch"
+        }
+      ]
+    }
+    </script>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <!-- Mobile Metas -->
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+ <!-- Site Metas -->
+ <link rel="icon" href="images/fevicon/fevicon.png" type="image/gif" />
+ <meta name="keywords" content="" />
+ <meta name="description" content="" />
+ <meta name="author" content="" />
+
+<title>LOGO</title>
+
+<link rel="stylesheet" type="text/css" href="estilo.css">
+ <!-- fonts style -->
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+ <!-- font awesome style -->
+ <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+ <!-- Custom styles for this template -->
+ <link href="css/style.css" rel="stylesheet" />
+ <!-- responsive style -->
+ <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              LOGAO
+            </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+            
+            <h2>Login</h2>
+            <form action="/submit_login" method="post">
+                <div class="container">
+                    <label for="email"><b>E-mail</b></label>
+                    <input type="text" placeholder="Insira o E-mail" name="email" required>
+        
+                    <label for="psw"><b>Senha</b></label>
+                    <input type="password" placeholder="Insira a Senha" name="psw" required>
+        
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+<!--traduro para o site 
+
+
+    <script crossorigin="anonymous" src="https://cdn.amcapi.com/translation/cloudtranslation-1.0.0.min.js"></script>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        Nome: <input type="text" name="nome">
+        <input type="submit">
+      </form>
+      
+      <?php
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // coleta o valor de entrada do formulario
+        $nome = htmlspecialchars($_REQUEST['nome']); 
+        if (empty($nome)) {
+          echo "Nome esta vazio";
+        } else {
+          echo "Ola, $nome";
+        }
+      }
+      ?>
+<!-->
+</body>
+</html>
